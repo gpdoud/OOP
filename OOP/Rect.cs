@@ -6,8 +6,11 @@ namespace OOP {
 
     class Rect : Quad {
 
-        public int Area() {
+        public double Area() {
             return Side1 * Side2;
+        }
+        public int AreaToInt() {
+            return (int)Area();
         }
 
         public override string WhatAmI() {

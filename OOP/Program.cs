@@ -8,10 +8,14 @@ namespace OOP {
     
         static void Main(string[] args) {
 
-            Rect fred = new Rect();
+            var rectComp = new RectComp(3, 9);
+            Console.WriteLine($"The Perimeter of the rectComp is {rectComp.Perimeter()}");
+            Console.WriteLine($"The Area of the rectComp is {rectComp.Area()}");
+
+            Rect fred = new Rect(7, 11);
             Console.WriteLine($"Fred is a {fred.WhatAmI()}");
 
-            var sqr1 = new Sqr(4);
+            Sqr sqr1 = new Sqr(4);
             Console.WriteLine($"The Perimeter of the sqr is {sqr1.Perimeter()}");
             Console.WriteLine($"The Area of the sqr is {sqr1.Area()}");
             Console.WriteLine($"The sqr1 is a {sqr1.WhatAmI()}");
