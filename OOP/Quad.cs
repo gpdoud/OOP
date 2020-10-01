@@ -19,6 +19,10 @@ namespace OOP {
             return Side1 + Side2 + Side3 + Side4;
         }
 
+        public virtual int Area() {
+            throw new NotImplementedException();
+        }
+
         public Quad(int S1, int S2, int S3, int S4) {
             this.Side1 = S1;
             this.Side2 = S2;

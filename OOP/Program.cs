@@ -30,9 +30,11 @@ namespace OOP {
             };
             foreach(var geo in collection) {
                 Console.WriteLine($"geo is a {geo.WhatAmI()}");
-                var rect = geo as Rect;
-                if(rect != null) {
-                    Console.WriteLine($"The area of geo is {rect.Area()}");
+                Console.WriteLine($" - the perimeter is {geo.Perimeter()}");
+                try {
+                    Console.WriteLine($" - the area is {geo.Area()}");
+                } catch (Exception) {
+                    // do nothing
                 }
             }
 

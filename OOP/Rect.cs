@@ -6,7 +6,7 @@ namespace OOP {
 
     class Rect : Quad {
 
-        public int Area() {
+        public override int Area() {
             return Side1 * Side2;
         }
 
