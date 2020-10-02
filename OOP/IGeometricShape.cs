@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace OOP {
-    interface IPerimeter {
+    interface IGeometricShape {
+
+        int Perimeter();
+        int Area();
+
     }
 }

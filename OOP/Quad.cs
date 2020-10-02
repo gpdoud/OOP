@@ -4,18 +4,18 @@ using System.Text;
 
 namespace OOP {
 
-    class Quad : IPerimeter, IArea {
+    class Quad  {
 
-        public double Side1 { get; private set; }
-        public double Side2 { get; private set; }
-        public double Side3 { get; private set; }
-        public double Side4 { get; private set; }
+        public int Side1 { get; private set; }
+        public int Side2 { get; private set; }
+        public int Side3 { get; private set; }
+        public int Side4 { get; private set; }
 
         public virtual string WhatAmI() {
             return "Quadrillateral";
         }
 
-        public double Perimeter() {
+        public int Perimeter() {
             return Side1 + Side2 + Side3 + Side4;
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Data.SqlTypes;
+using System.IO;
 
 namespace OOP {
 
@@ -21,6 +22,7 @@ namespace OOP {
             Console.WriteLine($"The sqr1 is a {sqr1.WhatAmI()}");
 
             var rect1 = new Rect(5, 3);
+            //int p = rect1.Perimeter();
             Console.WriteLine($"The Perimeter of the rect is {rect1.Perimeter()}");
             Console.WriteLine($"The Area of the rect is {rect1.Area()}");
             Console.WriteLine($"The rect1 is a {rect1.WhatAmI()}");
@@ -38,6 +40,13 @@ namespace OOP {
                 if(rect != null) {
                     Console.WriteLine($"The area of geo is {rect.Area()}");
                 }
+            }
+
+            var geoshapes = new IGeometricShape[] {
+                new Circle(1), new Circle(2)
+            };
+            foreach(var shape in geoshapes) {
+                Console.WriteLine($"Radius: Perimeter: {shape.Perimeter()}, Area: {shape.Area()}");
             }
 
         }
