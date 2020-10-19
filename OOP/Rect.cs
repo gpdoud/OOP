@@ -4,9 +4,9 @@ using System.Text;
 
 namespace OOP {
 
-    class Rect : Quad {
+    class Rect : Quad, IGeometricShape {
 
-        public double Area() {
+        public int Area() {
             return Side1 * Side2;
         }
         public int AreaToInt() {

@@ -43,10 +43,15 @@ namespace OOP {
             }
 
             var geoshapes = new IGeometricShape[] {
-                new Circle(1), new Circle(2)
+                new Circle(1), new Circle(2), new Rect(3, 7), new Sqr (5)
             };
+            //var geoshapes2 = new IGeometricShape[2];
+            //geoshapes2[0] = new Circle(3);
+            //geoshapes2[1] = new Circle(4);
+
             foreach(var shape in geoshapes) {
-                Console.WriteLine($"Radius: Perimeter: {shape.Perimeter()}, Area: {shape.Area()}");
+               
+                Console.WriteLine($"Perimeter: {shape.Perimeter()}, Area: {shape.Area()}");
             }
 
         }
